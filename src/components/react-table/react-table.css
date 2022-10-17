@@ -1,0 +1,194 @@
+/* start main section style */
+div.table-with-search-container {
+    text-align: left;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    /* padding-bottom: 50px; */
+    box-shadow: 1px 1px 4px 3px #edeaea;
+}
+
+.table-with-search-container h1 {
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.table-with-search-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+
+/* end main section style  */
+/* start search section style  */
+.search-section {
+    padding: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    color: grey;
+}
+
+.table-with-search-container table {
+    width: 100%;
+    border-top: 2px solid #eeebeb;
+
+}
+
+.search-section input {
+    min-width: 250px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding-left: 32px;
+}
+.search-with-paginator {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-with-paginator span {
+    color: grey;
+}
+
+.search-with-paginator select {
+    width: 54px;
+    height: 31px;
+    padding: 3px;
+    border: 1px solid #bcb2b2;
+    border-radius: 6px;
+    margin: 0 5px;
+    color: grey;
+    font-size: 14px;
+}
+/* end search section style */
+
+/* start table style */
+.table-with-search-container .table-striped .active-status {
+    display: flex;
+    align-items: center;
+    color: green;
+}
+
+.table-with-search-container .table-striped .active-status .circle {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.inactive-status {
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+.table-striped .inactive-status .circle {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+
+/* start show and hide section */
+.show-hide-state {
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.show-hide-checkboxes {
+    display: flex;
+    padding: 0px 20px 10px;
+    flex-wrap: wrap;
+}
+
+.show-hide-checkboxes label {
+    margin-right: 23px;
+    color: grey;
+    font-weight: 500;
+}
+
+.show-hide-checkboxes input {
+    margin-right: 5px;
+}
+
+
+/* start pagination style */
+ul.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.page-item .page-link {
+    width: 10px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 5px;
+    color: grey;
+    background: transparent;
+    border: 1px solid grey;
+    
+}
+
+.pagination__item.page-item.active .page-link {
+    color: grey;
+    background: #dfdddd;
+    border: 1px solid grey;
+}
+/* end pagination style */
+
+
+/* start small screen style */
+.mobile {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width : 1024px) {
+    .mobile {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .search-with-paginator{
+        flex-direction: column;
+    }
+    .search-container{
+        margin-bottom: 10px;
+    }
+}
+
+.fa-sort-up , .fa-sort-down{
+    margin-left: 10px;
+    color: grey;
+}
